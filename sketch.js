@@ -15,18 +15,13 @@ function setup() {
 	canvas.style('z-index', '-1');
 
 	next = select('#next');
-	next.position(windowWidth / 2, 5);
 	next.style('font-size', '1.5em');
 	setInterval(changeColor, 500);
 
 	dots = select('#dots');
-	dots.position(windowWidth / 4, windowHeight / 6);
 	dots.style('font-family', 'courier');
 	dots.style('color', 'white');
 	dots.style('font-size', '2em');
-
-	signal = select('#signal');
-	signal.position(windowWidth / 3, windowHeight / 2);
 }
 
 function changeColor() {
